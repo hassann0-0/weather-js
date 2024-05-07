@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #222;
+}
+.card{
+    width: 90%;
+    height: 140px;
+    overflow: hidden;
+    max-width: 470px;
+    background:linear-gradient(120deg,#19A7CE,#AFD3E2) ;
+    color: #F6F1F1;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+    transition: .4s ease-in-out;
+
+}
+.search{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.search input{
+    border: 0;
+    outline: 0;
+    padding: 10px 25px;
+    background: #F6F1F1;
+    color: #555;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+}
+.search button{
+    border-radius: 50%;
+    background: #F6F1F1;
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+.search button img{
+    width: 23px;
+    transition: .2s ease-in-out;
+}
+.search button:hover{
+    background: #f6f1f157;
+    img{
+        width: 25px;
+    }
+}
+.error{
+    margin-top:10px;
+    color: rgba(255, 0, 0, 0.518);
+    margin-left: -240px;
+    display: none;
+    transition: .4s ease-in-out;
+}
+.weather{
+    
+    margin-top: 30px;
+    
+}
+.weather h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+.weather h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+.details{
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 10px;
+    
+}
+.humidity,.wind{
+    font-size: 28px;
+    margin-top: -6px;
+}
+.ttt{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 55px;
+    align-items: center;
+    
+}
+.min{
+    margin-top: auto;
+    margin-bottom: 20px;
+    color: #f6f1f146;
+}
+.tempmin,.tempmax{
+    font-size: 30px;
+}
+.tit{
+    color: #f6f1f18f;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    -webkit-animation: tit 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tit 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    height: 40px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-bottom: -100px;
+}
+.tit h1{
+    font-size: 50px;
+}
+@keyframes tit {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
