@@ -41,7 +41,7 @@ body{
     font-size: 18px;
 }
 .search button{
-    border-radius: 50%;
+    border-radius: 50px;
     background: #F6F1F1;
     border: 0;
     outline: 0;
