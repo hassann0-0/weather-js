@@ -142,3 +142,8 @@ body{
   }
 }
 
+@media(max-width:700px){
+    .search button{
+        width: 0px;
+    }
+}
